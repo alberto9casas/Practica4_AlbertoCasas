@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: darkgrey;
+        }
+
+        header {
+            margin-bottom: 25px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            display: flex;
+            background-color: yellow;
+            width: 50%;
+            height: fit-content;
+        }
+
+        .content h2,
+        p {
+            width: 90%;
+        }
+
+        .content img {
+            margin: 10px;
+            width: 50%;
+            height: 350px;
+        }
+
+        .menu {
+            display: flex;
+            background-color: greenyellow;
+            height: fit-content;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        .lastPost {
+            text-align: right;
+            font-size: 14px;
+            background-color: gray;
+            width: 25%;
+            height: fit-content;
+            margin-left: 40px;
+        }
+
+        .contentInfo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 900px) {
+            .lastPost {
+                width: 70%;
+                margin: auto;
+                text-align: left;
+                margin-left: 20%;
+
+            }
+
+            .content {
+                width: 70%;
+            }
+
+            .content img {
+                height: 320px;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+            .menu {
+                width: 70%;
+                margin: auto;
+            }
+
+            .content {
+                margin: auto;
+            }
+
+            .content img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2>Site Name</h2>
+        </header>
+        <section class="container">
+            <aside class="menu">
+                <ul>
+                    <li> <a href="#link1">Link 1</a></li>
+                    <li><a href="#link2">Link 2</a></li>
+                    <li><a href="#link3">Link 3</a></li>
+
+                </ul>
+            </aside>
+
+            <section class="content">
+                <article class="contentInfo">
+                    <h2 id="supervisor">Ejemplo Despliegue Alberto Casas Ramirez</h2>
+                </article>
+                <img src="images/img.jpg" alt="helecho.jpg">
+            </section>
+
+            <aside class="lastPost">
+                <h2>Related info</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta sem. Morbi rhoncus quis enim
+                    vitae gravida. Cras diam mauris, lacinia lobortis est sed, consectetur molestie enim.
+                </p>
+            </aside>
+
+        </section>
+    </main>
+</body>
+
+</html>
